@@ -6,8 +6,9 @@ const PORT = 3000;
 //reqは来たもの
 //resは返すものらしい。
 app.get("/", (req, res) => {
-  console.log("hallo express");
-  res.send("こんにちは");
+  //console.log("hallo express");
+  //res.send("こんにちは");
+  res.sendStatus(500);
 });
 
 app.listen(PORT, () => console.log("サーバーが起動しました。"));
